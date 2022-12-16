@@ -75,7 +75,7 @@ function renderBox(){
     let maxLeft = gameSize.width - boxSize;
 
     box.style.width = box.style.height = boxSize + "px";
-    box.style.background = "#000";
+    box.style.background = '#' + (Math.random().toString(16) + '000000').substring(2,8)
     box.style.position = "absolute";
     box.style.top = getRandom(0,maxTop) + "px";
     box.style.left = getRandom(0, maxLeft) + "px";

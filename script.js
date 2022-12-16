@@ -1977,45 +1977,45 @@ $ - конец строки(после последовательности ни
 // document.write(rabbit.name + "<br>");
 // document.write(rabbit.earLength + "<br>");
 
-class Header{
-  constructor(img, h1, h2){
-       this.src = img;
-       this.h1 = h1;
-       this.h2 = h2;
-  }
+// class Header{
+//   constructor(img, h1, h2){
+//        this.src = img;
+//        this.h1 = h1;
+//        this.h2 = h2;
+//   }
 
-  render(id){
-      let out = `
-          <img src="${this.src}" alt ="">
-          <h1>${this.h1}</h1>     
-          <h2>${this.h2}</h2>     
-      `;
-      document.querySelector(`#${id}`).innerHTML = out;
-    }
-  }
+//   render(id){
+//       let out = `
+//           <img src="${this.src}" alt ="">
+//           <h1>${this.h1}</h1>     
+//           <h2>${this.h2}</h2>     
+//       `;
+//       document.querySelector(`#${id}`).innerHTML = out;
+//     }
+//   }
 
-  class HeaderExt extends Header{
-    constructor(img, h1, h2, tel){
-      super(img, h1, h2);
-      this.tel = tel;
-    }
-    renderExt(id){
-    super.render(id);
-    }
-  }
+//   class HeaderExt extends Header{
+//     constructor(img, h1, h2, tel){
+//       super(img, h1, h2);
+//       this.tel = tel;
+//     }
+//     renderExt(id){
+//     super.render(id);
+//     }
+//   }
 
-  let img = "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-64.png";
-  let header = new Header(img, "Заголовок", "Описание");
-  header.render("header");
+//   let img = "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-64.png";
+//   let header = new Header(img, "Заголовок", "Описание");
+//   header.render("header");
 
-  let img2 = "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-64.png";
-  let header2 = new Header(img2, "Второй заголовок", "Другое описание");
-  header2.render("header2");
+//   let img2 = "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-64.png";
+//   let header2 = new Header(img2, "Второй заголовок", "Другое описание");
+//   header2.render("header2");
 
 
-  let img3 = "https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/node-js-64.png";
-  let header3 = new HeaderExt(img3, "Дочерний класс", "Дочерний класс наследует все свойства и методы родительского класса", "+ 7 945 734-46-46")
-  header3.renderExt("ext");
+//   let img3 = "https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/node-js-64.png";
+//   let header3 = new HeaderExt(img3, "Дочерний класс", "Дочерний класс наследует все свойства и методы родительского класса", "+ 7 945 734-46-46")
+//   header3.renderExt("ext");
 
 // JSON
 // *.json
